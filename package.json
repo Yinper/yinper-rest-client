@@ -1,11 +1,11 @@
 {
-  "name": "yinper-rest-client",
-  "version": "0.0.0",
+  "name": "@yinper/rest-client",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test --browsers PhantomJS",
+    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "precommit": "npm run lint && npm run build",
@@ -22,8 +22,8 @@
     "@angular/platform-browser": "^6.0.0",
     "@angular/platform-browser-dynamic": "^6.0.0",
     "@angular/router": "^6.0.0",
+    "angular-in-memory-web-api": "^0.6.0",
     "core-js": "^2.5.4",
-    "intl": "^1.2.5",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
@@ -44,7 +44,6 @@
     "karma-coverage-istanbul-reporter": "~1.4.2",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-phantomjs-launcher": "^1.0.4",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
