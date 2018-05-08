@@ -1,0 +1,8 @@
+# More info about code owners available at https://help.github.com/articles/about-codeowners/
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# this users will be requested for review when someone
+# opens a pull request.
+
+*           @franBlopez
