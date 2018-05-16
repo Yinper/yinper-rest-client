@@ -18,13 +18,13 @@ To install the repository, please follow the next steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Telefonica/aura-bot.git
+git clone https://github.com/Yinper/yinper-rest-client.git
 ```
 
 2. Get into the local repository root directory:
 
 ```bash
-cd aura-bot
+cd yinper-rest-client
 ```
 
 3. Install the project dependencies:
