@@ -37,7 +37,7 @@ npm install
 
 # Documentation
 
-Typescript documentation about the base API client, the API errors as well as about the rest of the remote service clients is available at [Yinper documentation](https://github.com/Yinper/yinper-rest-client/blob/master/documentation).
+Typescript documentation about the base API client, the API errors as well as about the rest of the remote service clients is available at [Yinper documentation](https://yinper.github.io/yinper-rest-client/documentation/).
 
 # Running the unit tests
 

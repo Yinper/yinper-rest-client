@@ -86,14 +86,14 @@
                         <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-AppModule-3a675ce6-2305-4305-af41-e03b2ee30ec4"
+                                        data-target="#xs-components-links-module-AppModule-f662f18c-8070-4a19-ba15-f818e1699211"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-AppModule-3a675ce6-2305-4305-af41-e03b2ee30ec4"
+                                        id="xs-components-links-module-AppModule-f662f18c-8070-4a19-ba15-f818e1699211"
                                     >
                                         <li class="link">
                                             <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -264,14 +264,14 @@
                         <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-AppModule-3a675ce6-2305-4305-af41-e03b2ee30ec4"
+                                        data-target="#components-links-module-AppModule-f662f18c-8070-4a19-ba15-f818e1699211"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-AppModule-3a675ce6-2305-4305-af41-e03b2ee30ec4"
+                                        id="components-links-module-AppModule-f662f18c-8070-4a19-ba15-f818e1699211"
 >
                                         <li class="link">
                                             <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -374,6 +374,56 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h1 id="contribution-guidelines">Contribution guidelines</h1>
+<p>The <code>yinper-rest-client</code> repository is an open source repository and consequently anyone with access to the repository is more than invited to collaborate in the project.</p>
+<p>There are 2 main ways to collaborate in the process:</p>
+<ol>
+<li><p><a href="#creating-a-new-client">Creating a new client</a>.</p>
+</li>
+<li><p><a href="#updating-any-of-the-already-available-clients">Updating any of the already available clients</a>.</p>
+</li>
+</ol>
+<p>Let&#39;s see how to proceed in each one of this situations.</p>
+<h2 id="creating-a-new-client">Creating a new client</h2>
+<p>We have integrated <a href="https://cli.angular.io/"><code>angular-cli</code></a> as a way to boost the process of creating new service for the clients. It is important to note that although the process is highly accelerated, there is still work to do for the new API client creator to make it fully functional.</p>
+<p>To create a new API client template, please follow the next steps:</p>
+<ol>
+<li>Creating a new branch in your local repository:</li>
+</ol>
+<pre class="line-numbers"><code class="language-bash">git checkout -b feat/the-name-of-your-branch</code></pre><ol start="2">
+<li>Run the follwoing command to the generation of a new service in angular:</li>
+</ol>
+<pre class="line-numbers"><code class="language-bash">ng generate service my-new-service</code></pre><ol start="3">
+<li>Generate code in the generated files</li>
+</ol>
+<h2 id="updating-any-of-the-already-available-clients">Updating any of the already available clients</h2>
+<p>To fix any issue or implement a new feature in any of the already existent API clients, please follow the next steps:</p>
+<ol>
+<li>Create a new branch for the new code:</li>
+</ol>
+<pre class="line-numbers"><code class="language-bash">git checkout -b feat-or-fix-or-chore-depending-on-the-update/the-name-of-your-branch</code></pre><ol start="2">
+<li>Make your changes to the code base.</li>
+</ol>
+<p>Once you have finished including your changes, please follow the guidelines to contribute your changes according to section <a href="#contributing-code-to-the-repository">Contributing code to the repository</a>.</p>
+<h1 id="contributing-code-to-the-repository">Contributing code to the repository</h1>
+<p>To contribute your code to the repositiry, please follow the next steps:</p>
+<ol>
+<li>Once you are happy with your code, stash your changes into your branch:</li>
+</ol>
+<pre class="line-numbers"><code class="language-bash">git add .</code></pre><ol start="2">
+<li>Create a new commit executing the following command from the root of your local repository:</li>
+</ol>
+<pre class="line-numbers"><code class="language-bash">git commit -m &quot;comentary of commit&quot;</code></pre><ol start="3">
+<li>Push your branch to the remote repository (this step will run the unit tests of all the packages and it will not let you continue until of all them pass):</li>
+</ol>
+<pre class="line-numbers"><code class="language-bash">git push origin feat-or-fix-or-chore-depending-on-the-update/the-name-of-your-branch</code></pre><ol start="5">
+<li><p>From <a href="https://github.com/Yinper/yinper-rest-client">Github</a>, send a new pull request from the branch with your code to <code>master</code>.</p>
+</li>
+<li><p>Ask for revision from any of the main contributors of the project.</p>
+</li>
+<li><p>Once the code has been reviewed and accepted, merge your code into <code>master</code>.</p>
+</li>
+</ol>
 
 
 
