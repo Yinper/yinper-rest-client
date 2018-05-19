@@ -439,7 +439,7 @@
 </nav>
                </div>
                <!-- START CONTENT -->
-               <div class="content class">
+               <div class="content injectable">
                    <div class="content-data">
 
 
@@ -447,12 +447,9 @@
 
 
 
-
-
-
 <ol class="breadcrumb">
-  <li>Classes</li>
-  <li>InMemoryDataService</li>
+  <li>Injectables</li>
+  <li>ProductsService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -470,17 +467,9 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/in-memory-data.service.ts</code>
+            <code>src/app/products/products.service.ts</code>
         </p>
 
-
-
-            <p class="comment">
-                <h3>Implements</h3>
-            </p>
-            <p class="comment">
-                        <code>InMemoryDbService</code>
-            </p>
 
 
             <section>
@@ -497,7 +486,16 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#createDb">createDb</a>
+                                    <span class="modifier">Public</span>
+                                <a href="#getProduct$">getProduct$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getProductComments$">getProductComments$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getProductOpinions$">getProductOpinions$</a>
                             </li>
                         </ul>
                     </td>
@@ -511,7 +509,54 @@
     </table>
 </section>
 
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/products/products.service.ts:15</a></div>
+                            </td>
+                        </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
 
             <section>
     
@@ -522,25 +567,27 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="createDb"></a>
+                        <a name="getProduct$"></a>
                         <span class="name">
                             <b>
-                            createDb
+                                <span class="modifier">Public</span>
+                            getProduct$
                             </b>
-                            <a href="#createDb"><span class="fa fa-link"></span></a>
+                            <a href="#getProduct$"><span class="fa fa-link"></span></a>
                         </span>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-<code>createDb()</code>
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getProduct$(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                     </td>
                 </tr>
 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/in-memory-data.service.ts:11</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/products/products.service.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -549,9 +596,182 @@
                     <td class="col-md-4">
 
                             <div class="io-description">
-                                <b>Returns : </b>    <code>{ categories: {}; product: {}; productComments: {}; productOpinions: {}; }</code>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Product.html" target="_self" >Observable&lt;Product&gt;</a></code>
 
                             </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getProductComments$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getProductComments$
+                            </b>
+                            <a href="#getProductComments$"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getProductComments$(productID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/products/products.service.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>productID</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Product.html" target="_self" >Observable&lt;Product&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getProductOpinions$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getProductOpinions$
+                            </b>
+                            <a href="#getProductOpinions$"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getProductOpinions$(productID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/products/products.service.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>productID</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/Product.html" target="_self" >Observable&lt;Product&gt;</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
                     </td>
                 </tr>
             </tbody>
@@ -559,149 +779,58 @@
 </section>
 
 
-
-
-
-
     </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { InMemoryDbService } from &#x27;angular-in-memory-web-api&#x27;;
-import { Categories } from &#x27;./categories/categories.interface&#x27;;
-import {
-    Product,
-    ProductSeller,
-    ProductComments,
-    ProductOpinions
-} from &#x27;./products/products.interface&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
 
-export class InMemoryDataService implements InMemoryDbService {
-    createDb() {
-        const categories: Categories[] &#x3D; [
-            {
-                id: 1,
-                nameCategory: &#x27;Destacados&#x27;,
-                iconCategory:
-                    &#x27;https://image.flaticon.com/icons/svg/188/188000.svg&#x27;,
-                order: 1
-            },
-            {
-                id: 2,
-                nameCategory: &#x27;Ropa&#x27;,
-                iconCategory:
-                    &#x27;https://tienda.ulpgc.es/wp-content/uploads/2014/08/icon-ropa-basico.png&#x27;,
-                order: 2
-            },
-            {
-                id: 3,
-                nameCategory: &#x27;Hogar&#x27;,
-                iconCategory:
-                    &#x27;https://image.flaticon.com/icons/svg/188/188000.svg&#x27;,
-                order: 3
-            },
-            {
-                id: 4,
-                nameCategory: &#x27;Electronica&#x27;,
-                iconCategory:
-                    &#x27;https://tienda.ulpgc.es/wp-content/uploads/2014/08/icon-ropa-basico.png&#x27;,
-                order: 4
-            },
-            {
-                id: 5,
-                nameCategory: &#x27;Salud y Belleza&#x27;,
-                iconCategory:
-                    &#x27;https://image.flaticon.com/icons/svg/188/188000.svg&#x27;,
-                order: 5
-            },
-            {
-                id: 6,
-                nameCategory: &#x27;Juegos&#x27;,
-                iconCategory:
-                    &#x27;https://tienda.ulpgc.es/wp-content/uploads/2014/08/icon-ropa-basico.png&#x27;,
-                order: 6
-            }
-        ];
+import { environment } from &#x27;../../environments/environment&#x27;;
+import { Product, ProductSeller } from &#x27;./products.interface&#x27;;
+import { Observable } from &#x27;rxjs/internal/Observable&#x27;;
 
-        const product: Product[] &#x3D; [
-            {
-                id: 593,
-                productID: 593,
-                title: &#x27;Samsung Galaxy S8&#x27;,
-                description:
-                    &#x27;Color negro. Procesador de 8 núcleos. 64GB ampliable a 256 con tarjeta. Cámara de 12mp y frontal de 8.&#x27;,
-                favorit: false,
-                recommended: false,
-                recommendations: 4,
-                photos: [
-                    &#x27;https://www.yinper.com/pics/593/1.jpg&#x27;,
-                    &#x27;https://www.yinper.com/pics/593/2.jpg&#x27;
-                ],
-                price: 469.1,
-                shippingCost: 50.9,
-                paymentMethods: [1, 2],
-                delivery:
-                    &#x27;Tiempo de entrega máximo 48hrs. desde la recogida del producto&#x27;,
-                categories: [4],
-                stock: 1,
-                state: 2,
-                situation: 3,
-                salesCheck: false,
-                originalPacking: false,
-                seller: {
-                    id: 684,
-                    sellerName: &#x27;Estrella Castro&#x27;,
-                    follow: false,
-                    sellerRating: 1,
-                    sellerUrl: &#x27;https://www.yinper.com/perfil/estrella/684&#x27;
-                }
-            }
-        ];
+const httpOptions &#x3D; {
+    headers: new HttpHeaders({ &#x27;Content-Type&#x27;: &#x27;application/json&#x27; })
+};
 
-        const productComments: ProductComments[] &#x3D; [
-            {
-                id: 53,
-                productID: 593,
-                userID: 252,
-                userName: &#x27;Rubén&#x27;,
-                follow: false,
-                userRating: 2,
-                userUrl: &#x27;https://www.yinper.com/perfil/ruben/252&#x27;,
-                commentDate: &#x27;16/05/2018&#x27;,
-                commentText: &#x27;¿Que accesorios incluye?&#x27;
-            }
-        ];
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class ProductsService {
+    constructor(private http: HttpClient) {}
 
-        const productOpinions: ProductOpinions[] &#x3D; [
-            {
-                id: 93,
-                productID: 593,
-                userID: 703,
-                userName: &#x27;Isma&#x27;,
-                follow: false, //indica si el usuario que visualiza el producto sigue al opinador
-                userRating: 3,
-                userUrl: &#x27;https://www.yinper.com/perfil/isma/703&#x27;,
-                opinionDate: &#x27;2018-01-01T08:00:00&#x27;,
-                opinionText: &#x60;Vendedor excepcional,amable y sincero,el producto era justo lo que el prometia,
-                             muy buen precio y siempre dispuesto a facilitar la operacion de compra....&#x60;,
-                responses: [
-                    {
-                        userID: 684,
-                        userName: &#x27;Estrella&#x27;,
-                        responseDate: &#x27;2018-01-01T08:00:00&#x27;,
-                        userUrl: &#x27;https://www.yinper.com/perfil/estrella/684&#x27;,
-                        responseText: &#x27;Gracias Isma!! Lo que necesites.&#x27;
-                    }
-                ]
-            }
-        ];
+    public getProduct$(id: number): Observable&lt;Product&gt; {
+        const ENTRY_POINT &#x3D;
+            environment.API_ENDPOINT + environment.URL_PRODUCT + &#x27;/&#x27; + id;
+        return this.http.get&lt;Product&gt;(ENTRY_POINT);
+    }
 
-        return { categories, product, productComments, productOpinions };
+    public getProductComments$(productID: number): Observable&lt;Product&gt; {
+        const ENTRY_POINT &#x3D;
+            environment.API_ENDPOINT +
+            environment.URL_PRODUCT_COMMENTS +
+            &#x27;/&#x27; +
+            productID;
+        return this.http.get&lt;Product&gt;(ENTRY_POINT);
+    }
+
+    public getProductOpinions$(productID: number): Observable&lt;Product&gt; {
+        const ENTRY_POINT &#x3D;
+            environment.API_ENDPOINT +
+            environment.URL_PRODUCT_OPINIONS +
+            &#x27;/&#x27; +
+            productID;
+        return this.http.get&lt;Product&gt;(ENTRY_POINT);
     }
 }
 </code></pre>
     </div>
+
 </div>
+
+
+
 
 
 
@@ -733,8 +862,8 @@ export class InMemoryDataService implements InMemoryDbService {
 
         <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
-            var COMPODOC_CURRENT_PAGE_URL = 'InMemoryDataService.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProductsService.html';
         </script>
 
        <script src="../js/search/search.js"></script>
