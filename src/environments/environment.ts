@@ -5,6 +5,9 @@
 export const environment = {
     API_ENDPOINT: '',
     URL_CATEGORIES: 'api/categories',
+    URL_PRODUCT: 'api/product',
+    URL_PRODUCT_COMMENTS: 'api/product/comments',
+    URL_PRODUCT_OPINIONS: 'api/product/opinions',
     production: false
 };
 
